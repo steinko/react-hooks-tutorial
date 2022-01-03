@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
 function App() {
+	 const [message] = useState("Hello World");
   return (
     <div>
-      <p> Hello World</p>
+      <p> {message}</p>
     </div>
   );
 }
