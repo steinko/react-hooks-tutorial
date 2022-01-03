@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
-function App() {
-	 const [message] = useState("Hello World");
+import React, { useState } from 'react'
+function App () {
+  const [message, setMessage] = useState('')
   return (
-    <div>
-      <p> {message}</p>
-    </div>
-  );
+                <div>
+                   <p>{message}</p>
+                   <button onClick= {() => setMessage('Hello World')}>
+                      Display Hello World
+                  </button>
+                </div>
+  )
 }
 
-export default App;
+export default App
